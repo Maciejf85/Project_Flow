@@ -1,0 +1,45 @@
+// Bootstrap Grid Override - Updated for Modern Screens
+
+// Grid breakpoints (Now includes `xxxl` for ultrawide screens)
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 1024px,
+    // Lepsza zgodność z laptopami
+    xl: 1280px,
+    // Bardziej zgodne z ekranami FHD
+    xxl: 1536px,
+    // MacBook Pro M3+ oraz większe monitory
+    xxxl: 1920px,
+    // Nowy breakpoint dla 4K monitorów
+    wide: 2560px // Dla ultrawide ekranów (34–38 cali),,,,,
+);
+
+// Sprawdzanie poprawności wartości
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+// Grid containers (Dostosowane do nowych rozdzielczości)
+$container-max-widths: (
+    xs: 100%,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    // Pasuje do większej liczby laptopów
+    xl: 1152px,
+    // Zaktualizowane pod FHD (lepszy spacing)
+    xxl: 1366px,
+    // Optymalne dla 1440p i MacBook Pro 16"
+    xxxl: 1600px,
+    // Optymalne dla 4K ekranów
+    wide: 1800px // Optymalne dla ultrawide 2560x1080+,,,,,
+);
+
+// Sprawdzanie poprawności wartości
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+// Grid columns
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+$enable-grid-classes: true;
