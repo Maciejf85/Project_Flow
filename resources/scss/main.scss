@@ -1,16 +1,16 @@
-@forward "./grid";
+@import "./grid";
 
-@forward "./00-utils/css-variables";
-@forward "./00-utils/functions";
-@forward "./00-utils/mixins";
+@import "./00-utils/css-variables";
+@import "./00-utils/functions";
+@import "./00-utils/mixins";
 
-@forward "./01-core/reset";
-@forward "./01-core/fonts";
-@forward "./01-core/variables";
-@forward "./01-core/typography";
-@forward "./01-core/base";
+@import "./01-core/reset";
+@import "./01-core/fonts";
+@import "./01-core/variables";
+@import "./01-core/typography";
+@import "./01-core/base";
 
-@forward "./02-atoms/index";
-@forward "./03-molecules/index";
-@forward "./04-organisms/index";
-@forward "./05-template/index";
+@import "./02-atoms/index";
+@import "./03-molecules/index";
+@import "./04-organisms/index";
+@import "./05-template/index";

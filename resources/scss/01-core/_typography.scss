@@ -1,7 +1,124 @@
-h1 {
-    font-size: 6rem;
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--heading-color);
 }
 
-h2 {
-    font-size: 3rem;
+h1,
+.h1 {
+    font-size: calc(1.369140625rem + 1.4296875vw);
+
+    @include above(xl) {
+        font-size: 2.44140625rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: calc(1.3203125rem + 0.84375vw);
+    @include above(xl) {
+        font-size: 1.953125rem;
+    }
+}
+
+h3,
+.h3 {
+    font-size: calc(1.28125rem + 0.375vw);
+
+    @include above(xl) {
+        font-size: 1.5625rem;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 1.25rem;
+}
+
+h5,
+.h5 {
+    font-size: 1rem;
+}
+
+h6,
+.h6 {
+    font-size: 0.8rem;
+}
+
+.display-1 {
+    font-size: calc(1.6018371582rem + 4.2220458984vw);
+    font-weight: 400;
+    line-height: 1;
+
+    @include above(xl) {
+        font-size: 4.768371582rem;
+    }
+}
+
+.display-2 {
+    font-size: calc(1.5064697266rem + 3.0776367188vw);
+    font-weight: 400;
+    line-height: 1;
+
+    @include above(xl) {
+        font-size: 3.8146972656rem;
+    }
+}
+
+.display-3 {
+    font-size: calc(1.4301757813rem + 2.162109375vw);
+    font-weight: 400;
+    line-height: 1;
+
+    @include above(xl) {
+        font-size: 3.0517578125rem;
+    }
+}
+
+.display-4 {
+    font-size: calc(1.369140625rem + 1.4296875vw);
+    font-weight: 400;
+    line-height: 1;
+
+    @include above(xl) {
+        font-size: 2.44140625rem;
+    }
+}
+
+.display-5 {
+    font-size: calc(1.3203125rem + 0.84375vw);
+    font-weight: 400;
+    line-height: 1;
+
+    @include above(xl) {
+        font-size: 1.953125rem;
+    }
+}
+
+.display-6 {
+    font-size: calc(1.28125rem + 0.375vw);
+    font-weight: 400;
+    line-height: 1;
+
+    @include above(xl) {
+        font-size: 1.5625rem;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
