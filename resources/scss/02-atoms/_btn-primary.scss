@@ -1,0 +1,17 @@
+.btn-primary {
+    @include transition(background-color);
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: var(--emphasis-bg);
+    background-color: var(--btn-bg);
+    border: 0;
+    outline: 0;
+    padding: 10px 24px;
+
+    &:hover {
+        background: var(--btn-hover-bg);
+    }
+}

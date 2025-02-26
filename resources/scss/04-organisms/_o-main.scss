@@ -1,6 +1,17 @@
 .o-main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &__header {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__links {
+        display: flex;
+        gap: 2rem;
+    }
 }

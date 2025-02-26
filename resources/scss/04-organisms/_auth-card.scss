@@ -1,0 +1,30 @@
+.auth-card {
+    background: var(--emphasis-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+
+    @include above(lg) {
+        padding: 2rem 1.5rem;
+    }
+
+    &__forgot,
+    &__register {
+        @include transition(color);
+        @include transition(text-decoration-color);
+        text-decoration: none;
+        color: var(--link-color);
+
+        &:hover {
+            color: var(--link-hover-color);
+        }
+    }
+
+    &__register {
+        text-decoration-color: transparent;
+        &:hover {
+            text-decoration-color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+    }
+}

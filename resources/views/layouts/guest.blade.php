@@ -17,7 +17,16 @@
 
 <body>
     <main class="o-main">
-        {{ $slot }}
+        <div class="container">
+            <div class="row flex-center py-5">
+                <div class="col-11 col-sm-10 col-xl-5">
+                    <div class="auth-card">
+                        <div class="auth-card__form">
+                            {{ $slot }}
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 </body>
 
